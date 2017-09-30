@@ -1,6 +1,6 @@
 ﻿namespace ChatService
 {
-    partial class Service1
+    partial class ChatService
     {
         /// <summary> 
         /// Обязательная переменная конструктора.

@@ -10,9 +10,9 @@ using System.Threading.Tasks;
 
 namespace ChatService
 {
-    public partial class Service1 : ServiceBase
+    public partial class ChatService : ServiceBase
     {
-        public Service1()
+        public ChatService()
         {
             InitializeComponent();
         }

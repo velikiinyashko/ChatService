@@ -17,7 +17,7 @@ namespace ChatService
             ServiceBase[] ServicesToRun;
             ServicesToRun = new ServiceBase[]
             {
-                new Service1()
+                new ChatService()
             };
             ServiceBase.Run(ServicesToRun);
         }
