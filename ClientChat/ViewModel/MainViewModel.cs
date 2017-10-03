@@ -12,6 +12,7 @@ using ClientChat.Model;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using System.Windows.Threading;
+using ClientChat.View;
 
 namespace ClientChat.ViewModel
 {
@@ -38,10 +39,8 @@ namespace ClientChat.ViewModel
             {
                 return _clickButton ?? (_clickButton = new RelayCommand(() =>
                 {
-                    //Disp.Invoke(new Action(() =>
-                    //{
-                    _consumer.Start(Messages);
-                    //}));
+                    SecondView view = new SecondView();
+                    view.Show();
                 }));
             }
         }
